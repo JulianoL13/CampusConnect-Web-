@@ -27,7 +27,7 @@ jobs:
       - name: Prettify code
         uses: creyD/prettier_action@v4.3
         with:
-          same_commit: true
+          same_commit: true #ensures that the pipeline does not overwrite the current commit
           prettier_version: 3.3.3
           prettier_options: --write **/*.{js,jsx,ts,tsx,json,md,css}
           github_token: ${{ secrets.GITHUBTOKEN }}
